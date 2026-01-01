@@ -1,0 +1,176 @@
+import { useState, useEffect, useRef } from "react";
+import { Button } from "@/components/ui/button";
+import { Menu, X, Sun, Moon } from "lucide-react";
+import { useTheme } from "@/contexts/ThemeContext";
+import { scrollToTop, scrollToSection } from "@/lib/scroll-utils";
+
+export const Navigation = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const { theme, toggleTheme } = useTheme();
+  const menuRef = useRef<HTMLDivElement | null>(null);
+  const toggleRef = useRef<HTMLButtonElement | null>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    if (!isMenuOpen) return;
+
+    const handleClickOutside = (e: MouseEvent | TouchEvent) => {
+      const target = e.target as Node | null;
+      // Ignore clicks on the toggle button itself
+      if (toggleRef.current && target && toggleRef.current.contains(target)) {
+        return;
+      }
+      if (menuRef.current && target && !menuRef.current.contains(target)) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setIsMenuOpen(false);
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('touchstart', handleClickOutside);
+    document.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('touchstart', handleClickOutside);
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [isMenuOpen]);
+
+  const navItems = [
+    { href: "#about", label: "About" },
+    { href: "#experience", label: "Experience" },
+    { href: "#projects", label: "Projects" },
+    { href: "#contact", label: "Contact" },
+  ];
+
+  const gotoHome = () => {
+    window.location.href = "/portfolio/";
+  }
+
+  return (
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      isScrolled ? "glass shadow-card dark:bg-card/80 dark:shadow-card" : "bg-background/80 dark:bg-background/80 backdrop-blur-sm"
+    }`}>
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="flex items-center justify-between h-16">
+          {/* Logo */}
+<button 
+  onClick={gotoHome}
+  className="flex items-center text-2xl font-bold text-gradient hover:scale-105 transition-transform"
+>
+  Balaji
+</button>
+
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center space-x-8">
+            {navItems.map((item) => (
+              <button
+                key={item.href}
+                onClick={() => scrollToSection(item.href.substring(1))}
+                className="text-foreground hover:text-primary transition-colors relative group bg-transparent border-none cursor-pointer"
+              >
+                {item.label}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
+              </button>
+            ))}
+            
+            {/* Dark Mode Toggle */}
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={toggleTheme}
+              className="relative overflow-hidden group"
+              aria-label="Toggle dark mode"
+            >
+              <Sun className={`w-5 h-5 transition-all duration-300 ${
+                theme === 'dark' ? 'rotate-90 scale-0' : 'rotate-0 scale-100'
+              }`} />
+              <Moon className={`absolute w-5 h-5 transition-all duration-300 ${
+                theme === 'dark' ? 'rotate-0 scale-100' : '-rotate-90 scale-0'
+              }`} />
+            </Button>
+            
+            <Button 
+              variant="hero" 
+              size="sm"
+              onClick={() => scrollToSection("contact")}
+            >
+              Contact Me
+            </Button>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <Button
+            variant="ghost"
+            size="icon"
+            className="md:hidden"
+            ref={toggleRef}
+            onClick={() => setIsMenuOpen((prev) => !prev)}
+          >
+            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </Button>
+        </div>
+
+        {/* Mobile Navigation */}
+        {isMenuOpen && (
+          <div className="md:hidden absolute top-full left-0 right-0 glass dark:bg-card/80 border-t border-border/20 dark:border-border/10">
+            <div ref={menuRef} className="flex flex-col items-center space-y-4 p-6 text-center">
+              {navItems.map((item) => (
+                <button
+                  key={item.href}
+                  onClick={() => {
+                    scrollToSection(item.href.substring(1));
+                    setIsMenuOpen(false);
+                  }}
+                  className="text-foreground dark:text-foreground hover:text-primary dark:hover:text-primary transition-colors py-2 bg-transparent border-none cursor-pointer"
+                >
+                  {item.label}
+                </button>
+              ))}
+              
+              {/* Dark Mode Toggle for Mobile */}
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={toggleTheme}
+                className="relative overflow-hidden group rounded-full"
+                aria-label="Toggle dark mode"
+              >
+                <Sun className={`w-5 h-5 transition-all duration-300 ${
+                  theme === 'dark' ? 'rotate-90 scale-0' : 'rotate-0 scale-100'
+                }`} />
+                <Moon className={`absolute w-5 h-5 transition-all duration-300 ${
+                  theme === 'dark' ? 'rotate-0 scale-100' : '-rotate-90 scale-0'
+                }`} />
+              </Button>
+              
+              <Button 
+                variant="hero" 
+                size="sm" 
+                className="w-fit"
+                onClick={() => {
+                  scrollToSection("contact");
+                  setIsMenuOpen(false);
+                }}
+              >
+                Contact Me
+              </Button>
+            </div>
+          </div>
+        )}
+      </div>
+    </nav>
+  );
+};

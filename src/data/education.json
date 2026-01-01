@@ -1,0 +1,47 @@
+[
+  {
+    "degree": "Bachelor of Technology - Computer Science",
+    "institution": "SRM Institute of Science and Technology",
+    "location": "Chennai, Tamil Nadu, India",
+    "period": "2022 - 2026",
+    "description": "Currently pursuing BTech in Computer Science with focus on AI, ML, and software development. Maintaining excellent academic performance with strong foundation in programming and data science.",
+    "achievements": [
+      "**CGPA: 9.72** (5th Semester) - Consistently high academic performance",
+      "**AI & ML Specialization**: Focus on artificial intelligence and machine learning technologies",
+      "**Research Experience**: Currently working as Data Science Intern at NIT Puducherry",
+      "**Programming Excellence**: Proficient in **Python, C++, JavaScript** with hands-on project experience"
+    ],
+    "logo": "srm_logo.webp",
+    "logoSize": "w-12 h-12"
+  },
+  {
+    "degree": "Higher Secondary Education (12th Grade)",
+    "institution": "Alwin Memorial Public School",
+    "location": "India",
+    "period": "2022",
+    "description": "Completed higher secondary education with Science stream, building strong foundation in Mathematics, Physics, and Chemistry.",
+    "achievements": [
+      "**85.2%** - Strong academic performance",
+      "**Science stream** specialization",
+      "**Strong foundation in Mathematics and Physics**",
+      "Developed **analytical and problem-solving skills**"
+    ],
+    "logo": "sunbeam_logo.png",
+    "logoSize": "w-12 h-12"
+  },
+  {
+    "degree": "Secondary Education (10th Grade)",
+    "institution": "Alwin International Public School",
+    "location": "India",
+    "period": "2020",
+    "description": "Completed secondary education with excellent academic performance, establishing strong fundamentals across all subjects.",
+    "achievements": [
+      "**88%** - Excellent academic performance",
+      "**Strong foundation** in core subjects",
+      "Developed **critical thinking skills**",
+      "Active participation in **academic competitions**"
+    ],
+    "logo": "sunbeam_logo.png",
+    "logoSize": "w-12 h-12"
+  }
+]

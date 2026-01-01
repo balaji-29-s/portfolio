@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Data Science Intern",
+    "company": "NIT Puducherry",
+    "location": "Puducherry, India",
+    "period": "Ongoing (2-Month Internship)",
+    "description": "Working on real-world AI deep learning research projects in collaboration with NIT faculty. Focusing on advanced machine learning techniques and model experimentation.",
+    "technologies": ["Python", "Deep Learning", "AI Research", "TensorFlow", "PyTorch"],
+    "achievements": [
+      "Working on **real-world AI deep learning research projects**",
+      "Collaborating with **NIT faculty** for model experimentation",
+      "Gaining hands-on experience in **advanced ML techniques**",
+      "Contributing to **research publications and findings**"
+    ]
+  },
+  {
+    "title": "AI & Green Skills Intern",
+    "company": "AICTE Virtual Internship",
+    "location": "Virtual Program",
+    "period": "4-Week Program",
+    "description": "Completed comprehensive AI and sustainability training program focusing on AI solutions for environmental impact and green technology applications.",
+    "technologies": ["AI", "Sustainability", "Green Technology", "Environmental AI"],
+    "achievements": [
+      "Completed **AI and sustainability training**",
+      "Explored **AI solutions for environmental impact**",
+      "Learned about **green technology applications**",
+      "Developed understanding of **sustainable AI practices**"
+    ]
+  }
+]

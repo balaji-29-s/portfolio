@@ -1,0 +1,73 @@
+[
+  {
+    "title": "AI Interview Mocker",
+    "description": "AI-powered platform designed to simulate real interview environments, helping users practice and prepare with confidence. Uses advanced AI models to conduct interviews, evaluate user responses, and offer insightful feedback for continuous improvement.",
+    "image": "/src/assets/Screenshot 2026-01-01 230619.png",
+    "logo": "/src/assets/Screenshot 2026-01-01 230619.png",
+    "technologies": ["Next.js", "TypeScript", "Clerk Authentication", "Google AI", "Vercel", "React", "Tailwind CSS"],
+    "liveUrl": "https://ai-interview-mocker-one-liard.vercel.app/",
+    "githubUrl": "https://github.com/balaji-29-s/Ai-interview-mocker",
+    "featured": true,
+    "highlights": [
+      "AI-powered interview simulation",
+      "Real-time feedback and evaluation",
+      "Advanced AI models for natural conversations",
+      "User authentication with Clerk",
+      "Responsive design for all devices"
+    ]
+  },
+  {
+    "title": "Medical Assistant - AI Healthcare Companion",
+    "description": "Revolutionary healthcare management platform that combines AI with intuitive document processing. Streamlines medical workflows, enhances patient care, and provides intelligent insights through advanced document analysis and natural language processing.",
+    "image": "/src/assets/Screenshot 2026-01-01 230845.png",
+    "logo": "/src/assets/Screenshot 2026-01-01 230845.png",
+    "technologies": ["Next.js 15", "TypeScript", "Google AI", "Radix UI", "Tailwind CSS", "React Hook Form", "PDF.js", "Tesseract.js"],
+    "liveUrl": "https://github.com/balaji-29-s/medical-assistent-",
+    "githubUrl": "https://github.com/balaji-29-s/medical-assistent-",
+    "featured": true,
+    "highlights": [
+      "AI-powered medical document analysis",
+      "Multilingual support (6 Indian languages)",
+      "Emergency health card with QR code",
+      "Medicine management and alternatives finder",
+      "Mental health support and mood tracking",
+      "HIPAA-compliant data handling"
+    ]
+  },
+  {
+    "title": "SafeCity - Urban Safety Monitoring",
+    "description": "Modern safety monitoring application with real-time map integration, community features, and emergency services. Features interactive Google Maps with heatmap visualization, real-time community chat, and emergency SOS functionality.",
+    "image": "/src/assets/462164263-713b3c15-0fe2-4e68-9ee0-521e3404e510.png",
+    "logo": "/src/assets/462164263-713b3c15-0fe2-4e68-9ee0-521e3404e510.png",
+    "technologies": ["React", "TypeScript", "Google Maps API", "EmailJS", "Vite", "Tailwind CSS", "shadcn-ui"],
+    "liveUrl": "https://safecity-tau.vercel.app/",
+    "githubUrl": "https://github.com/balaji-29-s/safecity",
+    "featured": true,
+    "highlights": [
+      "Interactive Google Maps with heatmap visualization",
+      "Real-time community chat system",
+      "Emergency SOS button with email alerts",
+      "Location search and selection",
+      "Responsive design with dark theme",
+      "Comprehensive emergency contact system"
+    ]
+  },
+  {
+    "title": "Predictive Maintenance - Laptop RUL Prediction",
+    "description": "Advanced AI-powered predictive maintenance platform that accurately predicts laptop remaining useful life using machine learning with 95.4% accuracy (R² score). Features real-time sensor data analysis, modern web interface, and production-ready ML pipeline.",
+    "image": "/src/assets/Screenshot 2026-01-01 232049.png",
+    "logo": "/src/assets/Screenshot 2026-01-01 232049.png",
+    "technologies": ["Python", "Machine Learning", "Flask", "React", "Docker", "Scikit-learn", "Pandas", "NumPy"],
+    "liveUrl": "",
+    "githubUrl": "https://github.com/balaji-29-s/predictive-maintenance-",
+    "featured": true,
+    "highlights": [
+      "95.4% accuracy (R² score) in RUL prediction",
+      "Real-time sensor data analysis",
+      "Production-ready ML pipeline",
+      "Modern web interface with React",
+      "Docker deployment support",
+      "Enterprise laptop fleet management"
+    ]
+  }
+]

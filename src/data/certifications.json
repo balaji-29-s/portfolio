@@ -1,0 +1,86 @@
+[
+  {
+    "title": "Introduction to Software Development",
+    "link": "https://www.coursera.org/account/accomplishments/verify/4E14GZITPXZ1",
+    "company": "IBM",
+    "location": "Online Course",
+    "period": "2024",
+    "description": "Completed comprehensive software development course covering programming fundamentals, software engineering principles, and development methodologies.",
+    "technologies": ["Software Development", "Programming", "IBM Tools"],
+    "achievements": [
+      "Mastered **software development fundamentals**",
+      "Learned **industry-standard development practices**",
+      "Gained proficiency in **software engineering principles**"
+    ]
+  },
+  {
+    "title": "Introduction to Machine Learning",
+    "link": "https://archive.nptel.ac.in/noc/B2C/candidate_login/candidate_scores.php?courseid=noc25-cs46",
+    "company": "NPTEL",
+    "location": "Online Certification",
+    "period": "2024",
+    "description": "Completed NPTEL's Introduction to Machine Learning course, covering core ML concepts, algorithms, and practical applications.",
+    "technologies": ["Machine Learning", "Python", "Data Science"],
+    "achievements": [
+      "**Earned NPTEL certification** in Machine Learning",
+      "Mastered **ML algorithms and concepts**",
+      "Applied **machine learning techniques** in projects"
+    ]
+  },
+  {
+    "title": "Docker & Kubernetes Fundamentals",
+    "link": "https://moonshot.scaler.com/s/sl/dyt0mREc-v",
+    "company": "Scaler",
+    "location": "Online Course",
+    "period": "2024",
+    "description": "Completed comprehensive course on containerization and orchestration technologies, focusing on Docker and Kubernetes fundamentals.",
+    "technologies": ["Docker", "Kubernetes", "DevOps", "Containerization"],
+    "achievements": [
+      "Mastered **Docker containerization**",
+      "Learned **Kubernetes orchestration**",
+      "Gained **DevOps deployment skills**"
+    ]
+  },
+  {
+    "title": "Digital Logic Design",
+    "link": "https://www.udemy.com/certificate/UC-531d41eb-4281-4350-b572-60038ff29fa0/",
+    "company": "Udemy",
+    "location": "Online Course",
+    "period": "2024",
+    "description": "Completed comprehensive course on digital logic design, covering fundamental concepts of digital circuits and logic systems.",
+    "technologies": ["Digital Logic", "Circuit Design", "Hardware"],
+    "achievements": [
+      "Mastered **digital logic fundamentals**",
+      "Understanding of **circuit design principles**",
+      "Knowledge of **hardware systems**"
+    ]
+  },
+  {
+    "title": "Verilog HDL Fundamentals",
+    "link": "https://www.udemy.com/certificate/UC-f0fad129-81b4-45f8-9fe1-e2715cc3139f/",
+    "company": "Udemy",
+    "location": "Online Course",
+    "period": "2024",
+    "description": "Completed course on Verilog Hardware Description Language, learning to design and simulate digital circuits.",
+    "technologies": ["Verilog HDL", "Hardware Design", "Digital Circuits"],
+    "achievements": [
+      "Proficient in **Verilog HDL programming**",
+      "Learned **hardware description techniques**",
+      "Gained **digital circuit simulation skills**"
+    ]
+  },
+  {
+    "title": "Complete Python Bootcamp",
+    "link": "https://www.udemy.com/certificate/UC-0040ddf8-794e-4209-9739-e7e1106ed9b0/",
+    "company": "Udemy",
+    "location": "Online Course",
+    "period": "2024",
+    "description": "Completed comprehensive Python programming bootcamp covering fundamentals to advanced concepts including data structures, OOP, and practical applications.",
+    "technologies": ["Python", "Programming", "Data Structures", "OOP"],
+    "achievements": [
+      "Mastered **Python programming fundamentals**",
+      "Proficient in **object-oriented programming**",
+      "Built **multiple Python applications**"
+    ]
+  }
+]
