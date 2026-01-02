@@ -4,7 +4,7 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/',  // Base path for GitHub Pages deployment
+  base: '/',  // Base path for deployment
 
   plugins: [
     react(),

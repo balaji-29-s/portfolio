@@ -2,9 +2,9 @@
 
 ## 🌐 Live Demo
 
-**[🔗 View Live Portfolio](https://balaji-29-s.github.io/portfolio/)**
+**[🔗 View Live Portfolio](https://balaji-portfolio-kappa.vercel.app)**
 
-> Experience the portfolio in action! Click the link above to explore the live website.
+> Experience the portfolio in action! The portfolio is deployed on Vercel for optimal performance and reliability.
 
 ---
 
@@ -52,9 +52,8 @@ A modern, responsive portfolio website built with React, TypeScript, and Tailwin
 - **Custom Components** - Reusable UI components library
 
 ### Build & Deploy
-- **ESLint** - Code linting and formatting
-- **PostCSS** - CSS processing and optimization
-- **GitHub Pages** - Automated deployment
+- **Vite** - Fast build tool and development server
+- **Vercel** - Deployment platform for optimal performance
 
 ## 🚀 Getting Started
 
@@ -95,13 +94,27 @@ npm run build
 yarn build
 ```
 
-### Deploy to GitHub Pages
+### Deploy to Vercel
 
-```bash
-npm run deploy
-# or
-yarn deploy
-```
+The portfolio is optimized for Vercel deployment:
+
+1. **Connect to Vercel**
+   - Go to [vercel.com](https://vercel.com)
+   - Import your GitHub repository
+   - Vercel will automatically detect the settings
+
+2. **Automatic Configuration**
+   - Framework: Vite
+   - Build Command: `npm run build`
+   - Output Directory: `dist`
+   - Install Command: `npm install`
+
+3. **Environment Variables** (if needed)
+   ```
+   VITE_FORMSPREE_ENDPOINT=your_formspree_endpoint_here
+   ```
+
+The deployment is automatic on every push to the main branch.
 
 ## 📁 Project Structure
 
@@ -173,7 +186,7 @@ Update the projects array in `src/data/projects.json`:
 - **AI Interview Mocker**: AI-powered interview simulation platform
 - **Medical Assistant**: Healthcare management with AI document processing
 - **SafeCity**: Urban safety monitoring with real-time maps
-- **Sea Surface Temperature Prediction**: Deep learning model for oceanographic forecasting
+- **Predictive Maintenance**: Machine learning model for industrial equipment monitoring
 
 ### Experience & Education
 Update your experience in the respective JSON files:
@@ -191,10 +204,7 @@ VITE_FORMSPREE_ENDPOINT=your_formspree_endpoint_here
 ```
 
 ### Deployment Configuration
-The project includes automated deployment scripts:
-
-- `npm run build` - Build for production
-- `npm run deploy` - Deploy to GitHub Pages
+The project is configured for Vercel deployment with automatic builds on push to main branch.
 
 ## 📱 Responsive Design
 
@@ -228,12 +238,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Icons**: [Lucide React](https://lucide.dev/) for beautiful icons
 - **UI Components**: [Radix UI](https://www.radix-ui.com/) for accessible components
 - **Animations**: Custom CSS and React animations
-- **Hosting**: [GitHub Pages](https://pages.github.com/) for free hosting
+- **Hosting**: [Vercel](https://vercel.com) for fast and reliable hosting
 
 ## 📞 Contact
 
 **Balaji S**
-- Portfolio: https://balaji-29-s.github.io/portfolio
+- Portfolio: https://balaji-portfolio-kappa.vercel.app
 - LinkedIn: https://www.linkedin.com/in/balaji-s-39770232a/
 - Email: bs8315@srmist.edu.in
 - GitHub: [@balaji-29-s](https://github.com/balaji-29-s)

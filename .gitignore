@@ -8,9 +8,6 @@
 # testing
 /coverage
 
-#AutoDeploy
-AutoDeploy.bat
-
 # production
 /build
 dist/
