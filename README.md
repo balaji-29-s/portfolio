@@ -1,7 +1,5 @@
 # 🚀 Balaji S - Portfolio Website
 
-![Portfolio Homepage](live-pic.png)
-
 ## 🌐 Live Demo
 
 **[🔗 View Live Portfolio](https://balaji-29-s.github.io/portfolio/)**
