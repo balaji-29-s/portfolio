@@ -2,7 +2,7 @@
 
 ## 🌐 Live Demo
 
-**[🔗 View Live Portfolio](https://balaji-29-s.github.io/portfolio/)**
+**[🔗 View Live Portfolio](https://portfolio-kappa-sepia-4ahic01fr5.vercel.app/)**
 
 > Experience the portfolio in action! Click the link above to explore the live website.
 
