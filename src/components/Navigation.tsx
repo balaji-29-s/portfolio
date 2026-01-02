@@ -56,7 +56,7 @@ export const Navigation = () => {
   ];
 
   const gotoHome = () => {
-    window.location.href = "/portfolio/";
+    window.location.href = "/";
   }
 
   return (
